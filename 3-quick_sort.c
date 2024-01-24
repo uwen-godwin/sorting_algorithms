@@ -67,7 +67,8 @@ quick_sort_recursive(array, pivot_index + 1, high, size);
 }
 
 /**
-* quick_sort - Sorts an array of integers in ascending order using Quick sort
+* quick_sort - Sorts an array of integers in ascending
+* order using Quick sort
 * @array: Array to be sorted
 * @size: Size of the array
 */
