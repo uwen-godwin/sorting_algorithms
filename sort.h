@@ -40,7 +40,6 @@ void bubble_sort(int *array, size_t size);
 
 /* 101-cocktail_sort_list.c */
 void cocktail_sort_list(listint_t **list);
-void swap_nodes(listint_t **node1, listint_t **node2);
 
 /* 103-merge_sort.c */
 void merge_sort(int *array, size_t size);
@@ -50,7 +49,9 @@ void merge(int *array, int low, int mid, int high);
 /* 105-radix_sort.c */
 void radix_sort(int *array, size_t size);
 int find_max(int *array, size_t size);
-void counting_sort(int *array, size_t size, int exp);
+void counting_sort(int *array, size_t size);
+
+/*void counting_sort(int *array, size_t size, int exp);*/
 
 /* 107-quick_sort_hoare.c */
 void quick_sort_hoare(int *array, size_t size);
@@ -86,5 +87,5 @@ int partition(int *array, int low, int high, size_t size);
 
 /* 100-shell_sort.c */
 void shell_sort(int *array, size_t size);
-
+void swap_nodes(listint_t **list, listint_t *node_a, listint_t *node_b);
 #endif /* SORT_H */
