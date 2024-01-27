@@ -55,6 +55,7 @@ void counting_sort(int *array, size_t size);
 void new_swap_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
 void new_swap_behind(listint_t **list, listint_t **tail, listint_t **shaker);
 void new_cocktail_sort_list(listint_t **list);
+void perform_counting_sort(int *array, size_t size);
 
 /* 107-quick_sort_hoare.c */
 void quick_sort_hoare(int *array, size_t size);
