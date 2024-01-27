@@ -1,8 +1,5 @@
 #include "sort.h"
 
-void swap_nodes(listint_t **list, listint_t **tail, listint_t **shaker, int direction);
-void cocktail_sort_list(listint_t **list);
-
 /**
  * swap_nodes - Swap a node in a listint_t doubly-linked list
  *              with the node in the specified direction.
@@ -59,7 +56,7 @@ void cocktail_sort_list(listint_t **list)
     for (tail = *list; tail->next != NULL;)
         tail = tail->next;
 
-    while (!shaken_not_stirred)
+    while (shaken_not_stirred == 0)
     {
         shaken_not_stirred = 1;
 
@@ -72,6 +69,9 @@ void cocktail_sort_list(listint_t **list)
                 shaken_not_stirred = 0;
             }
         }
+
+        if (shaken_not_stirred == 1)
+            break;
 
         for (shaker = shaker->prev; shaker != *list; shaker = shaker->prev)
         {
