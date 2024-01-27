@@ -1,6 +1,7 @@
 #ifndef SORT_H
 #define SORT_H
 
+#include <stdbool.h>
 #include <stdlib.h>
 #include <stddef.h>
 #include <stdio.h>
@@ -51,7 +52,9 @@ void radix_sort(int *array, size_t size);
 int find_max(int *array, size_t size);
 void counting_sort(int *array, size_t size);
 
-/*void counting_sort(int *array, size_t size, int exp);*/
+void new_swap_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
+void new_swap_behind(listint_t **list, listint_t **tail, listint_t **shaker);
+void new_cocktail_sort_list(listint_t **list);
 
 /* 107-quick_sort_hoare.c */
 void quick_sort_hoare(int *array, size_t size);
