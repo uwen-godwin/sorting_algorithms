@@ -91,6 +91,7 @@ int partition(int *array, int low, int high, size_t size);
 
 /* 100-shell_sort.c */
 void shell_sort(int *array, size_t size);
-void swap_nodes(listint_t **list, listint_t **tail, listint_t **shaker, int direction);
+void swap_nodes(listint_t **list, listint_t **tail,
+		listint_t **shaker, int direction);
 /*void swap_nodes(listint_t *left, listint_t *right, listint_t **list);*/
 #endif /* SORT_H */
